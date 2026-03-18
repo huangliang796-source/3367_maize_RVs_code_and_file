@@ -5,7 +5,7 @@ Rscript get_SD.r DTA
 ```
 The standard deviation were calculated for each traits. for example, the SD of DTA was 10.18685.
 
-## step2: treat the .PS file into .ma file
+## step2: treat the .PS file into .ma file (summary file)
 ```bash
 trait=$1; # a specific trait
 value=$2; # the SD value
@@ -17,8 +17,12 @@ perl ../filter_info/filter_marker.pl ../filter_info/freq/$trait\.frq.gz > wanted
 cat ../chr_PS/$trait\_chr*ps |perl change_PS_to_summary.pl - effet_allele ../filter_info/freq/$trait\.frq.gz wanted_allele_$trait $value > $trait\.summary
 ```
 
-## step3: get_indepedent_association.sh
+## step3: get independent association
 ```bash
 trait=$1
-SNP=../filter_info/analsis_variants 
-gcta64  --bfile $SNP  --maf 0.001 --cojo-file ${trait}.summary --cojo-slct --out ${trait}_chr1 --chr 1 --cojo-p 1e-7 &
+SNP=../filter_info/analsis_variants  # plink --bfile SNP_Indel_SV --make-bed --out analsis_variants --geno 0.5 --mac 10
+gcta64  --bfile $SNP  --maf 0.001 --cojo-file ${trait}.summary --cojo-slct --out ${trait}_chr1 --chr 1 --cojo-p 1e-7
+```
+
+Variants listed in these files end with ".jma.cojo" were treated as independent singals
+
