@@ -35,7 +35,8 @@ plink --bfile $genotype --freq --out freq/$trait --keep trait/$trait  --memory 8
 bgzip freq/$trait\.frq
 perl filter_marker.pl  freq/$trait\.frq.gz > wanted_variants
 ```
-Only SNP in the wanted_variants file were included for further analysis for a specific trait
+Only variants in the wanted_variants file were included for further analysis for a specific trait
+
 Follow this pipeline, the Output ps file looks like that:
 ```
 9_2639392	-14.19234009	3.132380403	6.117632368e-06
@@ -47,7 +48,9 @@ Follow this pipeline, the Output ps file looks like that:
 9_31684755	8.61740506	1.940042468	9.259643868e-06
 ```
 where the second and third column presents the effect size and SE(beta).
+
 Due to the treatment of "--make-bed" with out specific the the A1 allele, the A1 allele of each variants was the minor allele.
+
 Due to the treatment of "--recode 12  transpose  --output-missing-genotype 0", the effect size given by EMMAX was the effect size of the major allele (A2 allele).
 
 
