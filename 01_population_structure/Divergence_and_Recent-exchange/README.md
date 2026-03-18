@@ -12,8 +12,7 @@ vcftools --gzvcf $input_vcf --weir-fst-pop class1_list --weir-fst-pop class2_lis
   ```bash
   cat chr*_doubleton_SNP |perl assign_SNP_into_class_pairs.pl - sample_with_class_class19 > doubleton_share_pattern
 ```
-
-## step3 normalized inter-group f2 number by the total f2 detected in corresponding group
+## step3 normalize inter-group f2 number by the total f2 detected in corresponding group
   ```bash
   perl get_norm.pl doubleton_share_pattern doubleton_share_pattern_nor
 ```
