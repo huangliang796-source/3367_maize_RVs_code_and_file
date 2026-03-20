@@ -31,7 +31,7 @@ gcta64 --bfile SNP_list4.rare  --autosome-num 10 --autosome  --make-grm-inbred -
 
 ## step4: estimated heritability with GCTA
 ```bash
-gcta64 --mgrm grm_matirx_file --qcovar  PCA.eigenvec   --reml-maxit 1000 --pheno phenotype/DTA  --reml  --thread-num 32  --out 3367_no_constrain/DTA
+gcta64 --mgrm grm_matrix_file --qcovar  PCA.eigenvec   --reml-maxit 1000 --pheno phenotype/DTA  --reml  --thread-num 32  --out 3367_no_constrain/DTA
 ```
 
 For variants divided into 2LDscores bin X 3 MAF bin, a similar pipeline was applied.
