@@ -1,5 +1,10 @@
 ## step1: obtain sample list randomly
-
+```bash
+#sample_list contains the class information of 3367 genomes, with the second column presents the classID
+cat sample_list  |cut -f 2|sort |uniq  |awk '{print "perl split_by_group.pl sample_list " $NF ">  "$NF}' |sh  -
+cat sample_list  |cut -f 2|sort |uniq  -c |awk '{print "perl get_some_item_randomly.pl "$NF" "$NF"_rand "$1" 10 "}' |sh - 
+cat *rand > wanted_samples
+```
 
 ## step2: get downsampled-vcf for these samples
 ```bash
