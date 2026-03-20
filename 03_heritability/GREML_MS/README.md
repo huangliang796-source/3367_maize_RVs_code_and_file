@@ -14,7 +14,7 @@ gcta64 --bfile ./variant_Rare --autosome-num 10 --autosome  --make-grm-inbred --
 
 ## Step3: Estimated the heritability with GCTA
 ```bash
-gcta64 --mgrm grm_matirx_file --qcovar  PCA.eigenvec   --reml-maxit 1000 --pheno phenotype/DTA  --reml  --thread-num 32  --out 3367_no_constrain/DTA
+gcta64 --mgrm grm_matrix_file --qcovar  PCA.eigenvec   --reml-maxit 1000 --pheno phenotype/DTA  --reml  --thread-num 32  --out 3367_no_constrain/DTA
 ```
 
 
