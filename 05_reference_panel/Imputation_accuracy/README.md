@@ -37,7 +37,7 @@ beagle=/public/home/s20223010040/HuangL/software/beagle/beagle.08Feb22.fa4.jar
 java -Xmx240g -jar $beagle gt=chr1.GBS.vcf.gz   ref=../../treated_panel/chr1_phased.vcf.gz  out=chr1_GBS_phased  nthreads=24
 ```
 
-## step5 estimated the imputation accuracy
+## step5: estimated the imputation accuracy
 ```
 #Ture genotype:  chr1.vcf.gz
 #Imputed genotype: Chr1_GBS_phased.vcf.gz
