@@ -1,3 +1,5 @@
+# Estimation of imputation accuracy with downsampled-vcf
+
 ## step1: obtain sample list randomly
 ```bash
 #sample_list contains the class information of 3367 genomes, with the second column presents the classID
