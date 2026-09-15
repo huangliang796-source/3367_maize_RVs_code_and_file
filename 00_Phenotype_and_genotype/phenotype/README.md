@@ -1,5 +1,6 @@
+
 # BLUP estimation
-Input format
+Input format, each column presents "#Lines Env1  Env2"
 ```
 A1017	76.00 	66.00 
 A1044	86.00 	76.00 
@@ -13,7 +14,7 @@ A1502	80.00 	69.00
 A1777	69.00 	63.00 
 ```
 
-## Step1, BLUP analysis
+##Codes
 ```bash
 perl change_table_to_blup_format.pl DTA_table DTA_blup_format
 Rscript multi_envs_no_rep_phenotype_blup2.r  DTA_format DTA_blup
