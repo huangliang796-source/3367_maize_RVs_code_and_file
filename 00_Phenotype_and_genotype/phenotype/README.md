@@ -14,7 +14,7 @@ A1502	80.00 	69.00
 A1777	69.00 	63.00 
 ```
 
-##Codes
+# Codes
 ```bash
 perl change_table_to_blup_format.pl DTA_table DTA_blup_format
 Rscript multi_envs_no_rep_phenotype_blup2.r  DTA_format DTA_blup
