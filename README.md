@@ -6,5 +6,5 @@ Huang et al., Deep sequencing of 3,367 maize genomes uncovers substantial contri
 
 If you have any questions, please feel free to contact me at huangliang796@cau.edu.cn.
 
-Information on the maize inbred lines and their phenotypic values is provided in supplementary tables of the associated publication. 
-Genotype data for these inbred lines are available through the MaizeWorld database: https://ngdc.cncb.ac.cn/maizeworld/
+Information on the maize inbred lines and their phenotypic values is provided in the supplementary tables of the associated publication. 
+Genotype data for these inbred lines can be accessed via the MaizeWorld database ([https://ngdc.cncb.ac.cn/maizeworld/](https://ngdc.cncb.ac.cn/maizeworld/)), which currently only supports web‑based browsing at the single‑variant level. Should you request bulk variant files, we would highly appreciate it if you could also CC our lead‑contact (jlai@cau.edu.cn) and briefly outline your research rationale.
