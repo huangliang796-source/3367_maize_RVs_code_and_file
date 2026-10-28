@@ -5,7 +5,7 @@ Same with the 01_population_structure
 
 ## step2: calculate the LDScore
 ```bash
-SNP=~/GWAMA_FT/raw_genotype/raw_data01_3367/genotype/SNP_INDEL_SV
+SNP=~/GWAMA_FT/raw_genotype/raw_data01_3367/genotype/SNP_INDEL_SV_treated
 plink --bfile $SNP --chr 1 --make-bed --out chr1 --geno 0.5 --mac 10
 gcta64 --bfile chr1  --ld-score --ld-wind 5000 --ld-rsq-cutoff 0 --ld-score-adj --out chr1 --thread-num 12
 
