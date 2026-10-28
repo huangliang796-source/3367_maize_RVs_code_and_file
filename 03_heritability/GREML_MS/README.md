@@ -5,7 +5,7 @@ Same with the 01_population_structure/PCA
 
 ## Step2: Calculate the GRM matrix for variants belong to different MAF categories
 ```bash
-SNP=~/HuangL/3367/raw_data/genotype/SNP_INDEL_SV
+SNP=~/HuangL/3367/raw_data/genotype/SNP_INDEL_SV_treated
 plink -allow-no-sex --bfile  $SNP  --maf 0.05  --make-bed --out variant_commom --geno 0.5
 plink -allow-no-sex --bfile  $SNP  --mac 10 --max-maf 0.04999999 --make-bed --out variant_rare --geno 0.5
 gcta64 --bfile ./variant_commom --autosome-num 10 --autosome  --make-grm-inbred  --out common  --thread-num  40
